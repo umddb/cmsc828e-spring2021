@@ -1,6 +1,6 @@
 # Assignment 1: Computing Environment and PostgreSQL
 
-Over the course of the semester, you will work with a variety of software packages, including PostgreSQL, Apache Spark, Python Django, and others. Installing those
+This and the next assignment are designed to get you up to speed on PostgreSQL and Spark quickly. Installing those
 packages and getting started can often be a hassle, because of software dependencies. You have two choices.
 
 * Install the different software packages on your own machine (most of these packages should have tutorials to install them on different OSs). If you have a Linux box or a Mac, this should be possible; it may be more difficult with Windows. In any case, although we will try our best, we would likely not be able to help you with any problems.
@@ -66,13 +66,11 @@ details: https://education.github.com/
 
 ### PostgreSQL
 
-PostgreSQL is a full-fledged and powerful relational database system, and will be used for several assignments. 
+PostgreSQL is a full-fledged and powerful relational database system, and we recommend you try to use it for your course projects if that makes sense.
 
 PostgreSQL is already installed on your virtual machine. To get started, start the virtual machine using `vagrant up`. 
 
 The current version of PostgreSQL is 12.1. However, the version installed on the VMs is 10.10, the one available through `apt-get` right now. You will find the detailed documentation at: https://www.postgresql.org/docs/10/index.html
-
-Following steps will get you started with creating a database and populating it with the `University` dataset provided on the book website: http://www.db-book.com
 
 * You will be using PostgreSQL in the client-server mode. Recall that the server is a continuously running process that listens on a specific port (the actual port would differ, and you can usually choose it when starting the server). In order to connect to the server, the client will need to know the port. The client and server are often on different machines, but for you, it may be easiest if they are on the same machine (i.e., the virtual machine). 
 
@@ -91,7 +89,7 @@ Following steps will get you started with creating a database and populating it 
 * After the server has started, the first step is to **create** a database, using the **createdb** command. PostgreSQL automatically creates one database for its own purpose, called **postgres**. It is preferable you create a different database for your data. Here are more details on **createdb**: 
    http://www.postgresql.org/docs/current/static/tutorial-createdb.html
 
-* We will create a database called **university**.
+* We will create a database called **olympics**.
 	```
 	createdb olympics
 	```
@@ -146,7 +144,7 @@ This will start a server on the VM, listening on port 8888. We will access it fr
 
 ### Assignment 1
 
-This is a short SQL assignment against the `olympics` dataset.
+This is a short SQL assignment against the `olympics` dataset. Feel free to do this to the extent you wish.
 
 #### Schema 
 The dataset contains the details of the 2000 and 2004 Summer Olympics, for a subset of the games (`swimming` and `athletics`). More specifically,
