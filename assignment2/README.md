@@ -15,10 +15,10 @@ Spark can be used with the Hadoop ecosystem, including the HDFS file system and 
 
 ### Installing Spark
 
-As before, we have provided a VagrantFile in the `project5` directory. Since the Spark distribution is large, we ask you to download that directly from the Spark website.
+As before, we have provided a VagrantFile in the `assignment2` directory. Since the Spark distribution is large, we ask you to download that directly from the Spark website.
 
 1. Download the Spark package at http://spark.apache.org/downloads.html. We will use **Version 2.4.5, Pre-built for Hadoop 2.7 or later**.
-2. Move the downloaded file to the `project5/` directory (so it is available in '/vagrant' on the virtual machine), and uncompress it using: 
+2. Move the downloaded file to the `assignment2/` directory (so it is available in '/vagrant' on the virtual machine), and uncompress it using: 
 `tar zxvf spark-2.4.5-bin-hadoop2.7.tgz`
 3. This will create a new directory: `spark-2.4.5-bin-hadoop2.7`. 
 4. Set the SPARKHOME variable: `export SPARKHOME=/vagrant/spark-2.4.5-bin-hadoop2.7/`
@@ -78,7 +78,7 @@ The `lambda` representation is more compact and preferable, especially for small
 
 ### Running it as an Application
 
-Instead of using a shell, you can also write your code as a python file, and *submit* that to the spark cluster. The `project5` directory contains a python file `wordcount.py`,
+Instead of using a shell, you can also write your code as a python file, and *submit* that to the spark cluster. The `assignment2` directory contains a python file `wordcount.py`,
 which runs the program in a local mode. To run the program, do:
 `$SPARKHOME/bin/spark-submit wordcount.py`
 
